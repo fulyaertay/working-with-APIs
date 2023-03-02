@@ -19,5 +19,6 @@ document.getElementById("get-activity").addEventListener("click", function() {
         document.getElementById("activity").textContent = data.activity
         document.getElementById("title").textContent = "🦾 HappyBot🦿"
         document.body.classList.add("fun")
+        document.getElementById("get-activity").classList.add("button-changed")
       })
   })
