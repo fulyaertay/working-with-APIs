@@ -23,7 +23,7 @@
   
   ### Description
   
-  I created a BoredBot app using an API called as https://apis.scrimba.com/bored/api/activity. When user clicks activity text is rendered to DOM.
+  I created a BoredBot app using an API called as https://apis.scrimba.com/bored/api/activity. When user clicks activity text is rendered to DOM. You can get more information how to user Bored API on [this website](https://apis.scrimba.com/bored/documentation).
 
 
   ### What I Learned?
