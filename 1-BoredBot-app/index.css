@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Oxygen, sans-serif;
+    font-family: 'GFS Didot', serif;
 }
 
 button {
