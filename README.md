@@ -31,6 +31,7 @@
 
   - Server & Clients
   - Request/Response Cycle
-  - APIs
+  - APIs & async Javascript
   - JSON
   - fetch() syntax
+  - Bored API
