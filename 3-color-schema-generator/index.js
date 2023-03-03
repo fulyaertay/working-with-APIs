@@ -4,12 +4,10 @@ const getColorBtn=document.querySelector("#get-color")
 let listColors= document.querySelector(".list-colors")
 let hexValuesContent=document.querySelector(".hex-values")
 let listItem=document.querySelector(".list-color")
+let renderColors=""
+let renderHexValues=""
 
 function firstRender(){
-    let renderColors=""
-    let renderHexValues=""
-
-
     fetch("https://www.thecolorapi.com/scheme?hex=000000&mode=monochrome")
     .then(res => res.json())
     .then(data => {
@@ -35,9 +33,6 @@ function render(){
     const pickerVal=chooseColorFromPicker.value
     const listVal=getColorFromSelectBox.value
     //console.log(listVal)
-    let renderColors=""
-    let renderHexValues=""
-
 
     fetch(`https://www.thecolorapi.com/scheme?hex=${pickerVal.slice(1)}&mode=${listVal}`)
     .then(res => res.json())
