@@ -17,6 +17,8 @@ nav{
 #colors{
     width:9rem;
     padding: 10px;
+    background-color: #1F293A;
+    color:aliceblue;
 }
 
 #get-color{
