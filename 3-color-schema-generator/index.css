@@ -1,4 +1,28 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    background-color: rgb(31, 41, 55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap:5px
+}
+
+#colors{
+    width:20rem;
+    padding: 10px;
+}
+
+#get-color{
+    width:10rem;
+    padding: 10px;
+    background-color: #3D4B60;
+    border: none;
+    color:aliceblue;
 }
