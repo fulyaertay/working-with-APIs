@@ -18,7 +18,7 @@ function render(){
     .then(data => {
         for (let color of data.colors){
             renderColors+=`
-            <div class="list-color" style="background-color:${color.hex.value}">${color.hex.value}</div>
+            <div class="list-color" style="background-color:${color.hex.value}"></div>
 
             `
             renderHexValues+=` <div class="color-hex">${color.hex.value}</div>`
