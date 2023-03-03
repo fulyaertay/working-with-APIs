@@ -19,7 +19,7 @@
   
   ### 1-BoredBot App
 
-  ### Visualitaziton of the app;
+  ### Visualization of the app;
   ![image](./1-BoredBot-app/BoredBot.gif)
   
   
@@ -39,7 +39,7 @@
     
   ### 2-BlogSpace App
   
-  ### Visualitaziton of the app;
+  ### Visualization of the app;
   ![image](./2-BlogSpace-app/BlogSpace.gif)
   
   
@@ -62,7 +62,7 @@
     
   ### 3-Color Schema Generator
   
-  ### Visualitaziton of the app;
+  ### Visualization of the app;
   ![image](./3-color-schema-generator/color-generator.gif)
   
   
