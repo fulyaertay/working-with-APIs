@@ -61,6 +61,7 @@
     
     
   ### 3-Color Schema Generator
+  ### ✨ [Live Link](https://scrimba-color-generator.netlify.app/)
   
   ### Visualization of the app;
   ![image](./3-color-schema-generator/color-generator.gif)
