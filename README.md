@@ -34,7 +34,7 @@
   
   
   ### Visualitaziton of the app;
-  ![image](./1-BlogSpace-app/BlogSpace.gif)
+  ![image](./2-BlogSpace-app/BlogSpace.gif)
   
   
   
