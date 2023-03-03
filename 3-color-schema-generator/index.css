@@ -11,18 +11,33 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    gap:5px
+    gap:5px;
 }
 
 #colors{
-    width:20rem;
+    width:9rem;
     padding: 10px;
 }
 
 #get-color{
-    width:10rem;
+    width:7rem;
     padding: 10px;
     background-color: #3D4B60;
     border: none;
     color:aliceblue;
+}
+
+@media (min-width:767px){
+    #colors{
+        width:900px;
+        padding: 10px;
+    }
+    nav{
+        background-color: rgb(31, 41, 55);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap:5px;
+    }
 }
