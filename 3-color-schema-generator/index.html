@@ -1,58 +1,47 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <nav>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <input type="color" />
+        <select name="colors" id="colors">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome Dark</option>
+          <option value="monochrome-light">Monochrome Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <input type="button" id="get-color" value="Get Color Schema" />
+      </nav>
 
-                <input type="color"/>
-                <select name="colors" id="colors">
-                    <option value="monochrome">Monochrome</option>
-                    <option value="monochrome-dark">Monochrome Dark</option>
-                    <option value="monochrome-light">Monochrome Light </option>
-                    <option value="analogic">Analogic</option>
-                    <option value="complement">Complement</option>
-                    <option value="analogic-complement">Analogic Complement</option>
-                    <option value="triad">Triad</option>
-                    <option value="quad">Quad</option>
-                </select>
-                <input type="button" id="get-color" value="Get Color Schema">
-            </nav>
+      <div class="list-colors">
+        <div class="list-color"></div>
 
+        <div class="list-color">sdsdsd</div>
+        <div class="list-color"></div>
+        <div class="list-color">sdsdsd</div>
+        <div class="list-color">sdsdsd</div>
+      </div>
 
-            <div class="list-colors">
-                <div class="list-color"></div>
-                
-                <div class="list-color">sdsdsd</div>
-                <div class="list-color"></div>
-                <div class="list-color">sdsdsd</div>
-                <div class="list-color">sdsdsd</div>
-            </div>
+      <div class="hex-values">
+        <div class="color-hex">sdsdsd</div>
+        <div class="color-hex">sdsdsd</div>
+        <div class="color-hex">sdsdsd</div>
+        <div class="color-hex">sdsdsd</div>
+        <div class="color-hex">sdsdsd</div>
+      </div>
+    </div>
 
-            <div class="footer">
-                <div class="color-hex">sdsdsd
-
-                </div>
-                <div class="color-hex">sdsdsd
-                    
-                </div>
-                <div class="color-hex">sdsdsd
-                    
-                </div>
-                <div class="color-hex">sdsdsd
-                    
-                </div>
-                <div class="color-hex">sdsdsd
-                    
-                </div>
-
-            </div>
-
-
-        </div>
-       
-        <script src="index.js"></script>
-    </body>
+    <script src="index.js"></script>
+  </body>
 </html>
