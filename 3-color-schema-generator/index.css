@@ -27,6 +27,32 @@ nav{
     color:aliceblue;
 }
 
+.list-colors{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.list-color{
+    background-color: #3D4B60;
+    width: 200px;
+    height: 200px;
+}
+.footer{
+    background-color: #3D4B60;
+    padding: 10px;
+    margin-top: 0px;
+    border: 1px solid #c6ceda;
+    display: flex;
+    justify-content: space-between;
+}
+.color-hex{
+    color: aliceblue;
+    
+}
+
 @media (min-width:767px){
     #colors{
         width:900px;
