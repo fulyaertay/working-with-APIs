@@ -29,6 +29,13 @@
   I created a BoredBot app using an API called as https://apis.scrimba.com/bored/api/activity?type=education. When user clicks the button, text is rendered to DOM. You can get more information how to user Bored API on [this website](https://apis.scrimba.com/bored/documentation).
   
   
+  ### What I Learned?
+  - Server & Clients
+  - Request/Response Cycle
+  - APIs & async Javascript
+  - JSON
+  - fetch() syntax
+  - Bored API
     
   ### 2-BlogSpace App
   
@@ -46,8 +53,6 @@
 
 
   ### What I Learned?
-  
-
   - HTTP Requests
     - URLs, endpoints, methods, Body, Headers
   - REST APIs
