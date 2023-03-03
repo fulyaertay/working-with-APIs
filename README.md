@@ -16,7 +16,6 @@
 
   ## Projects
 
-  
   ### 1-BoredBot App
 
   ### Visualization of the app;
@@ -36,6 +35,7 @@
   - JSON
   - fetch() syntax
   - Bored API
+    
     
   ### 2-BlogSpace App
   
