@@ -60,7 +60,7 @@
     - Queries
     
     
-  ### 3-Color Schema Generator
+  ### 3-Solo Project: Color Schema Generator
   ### ✨ [Live Link](https://scrimba-color-generator.netlify.app/)
   
   ### Visualization of the app;
