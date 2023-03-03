@@ -6,6 +6,7 @@
 
   - [1-BoredBot App](#bored-bot)
   - [2-BlogSpace App](#blog-space)
+  - [3-Color Schema Genarator](#color-generator)
     
     
   ## Overview
@@ -57,3 +58,18 @@
     - Resources
     - Parameters
     - Queries
+    
+    
+  ### 3-Color Schema Generator
+  
+  ### Visualitaziton of the app;
+  ![image](./3-color-schema-generator/color-generator.gif)
+  
+  
+  
+  ### Description
+  
+  I created a solo project called as Color Schema Generator. The app uses an API on https://www.thecolorapi.com/docs#schemes-generate-scheme-get. The app features;
+    - User can select a seed color with a color picker or
+    - Select a color on dropdown list
+    - Schema colors and hex values are displayed on the page
