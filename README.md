@@ -67,7 +67,6 @@
   ![image](./3-color-schema-generator/color-generator.gif)
   
   
-  
   ### Description
   
   I created a solo project called as Color Schema Generator. The app uses an API on https://www.thecolorapi.com/docs#schemes-generate-scheme-get. The app features;
