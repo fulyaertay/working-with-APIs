@@ -13,7 +13,7 @@ function render(){
     let renderHexValues=""
 
 
-    fetch(`https://www.thecolorapi.com/scheme?hex=${pickerVal.slice(1)}&mode=${listVal}}`)
+    fetch(`https://www.thecolorapi.com/scheme?hex=${pickerVal.slice(1)}&mode=${listVal}`)
     .then(res => res.json())
     .then(data => {
         for (let color of data.colors){
