@@ -1,90 +1,84 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #c6ceda;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #c6ceda;
 }
 
+nav {
+  background-color: rgb(31, 41, 55);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 5px;
+}
+.choose-color {
+  padding: 0px;
+  height: 41px;
+}
+#colors {
+  width: 9rem;
+  padding: 10px;
+  background-color: #1f293a;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+}
 
-nav{
+#get-color {
+  width: 9rem;
+  padding: 10px;
+  background-color: #3d4b60;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.list-colors {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.list-color {
+  background-color: #3d4b60;
+  width: 100px;
+  height: 300px;
+  flex: 1;
+}
+.hex-values {
+  background-color: #3d4b60;
+  padding: 10px;
+  margin-top: 0px;
+  border: 1px solid #c6ceda;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.color-hex {
+  color: aliceblue;
+  padding: 0px 20px;
+}
+
+@media (min-width: 767px) {
+  .container {
+    width: 50%;
+    margin: 80px auto;
+    text-align: center;
+  }
+  nav {
     background-color: rgb(31, 41, 55);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    gap:5px;
-}
-.choose-color{
-   padding: 0px;
-   height: 41px;
-}
-#colors{
-    width:9rem;
-    padding: 10px;
-    background-color: #1F293A;
-    color:aliceblue;
-    border: 1px solid aliceblue;
-}
-
-#get-color{
-    width:9rem;
-    padding: 10px;
-    background-color: #3D4B60;
-    border: none;
-    color:aliceblue;
-    cursor: pointer;
-}
-
-.list-colors{
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-
-}
-
-.list-color{
-    background-color: #3D4B60;
-    width: 100px;
-    height: 300px;
-    flex:1;
-
-}
-.hex-values{
-    background-color: #3D4B60;
-    padding: 10px;
-    margin-top: 0px;
-    border: 1px solid #c6ceda;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.color-hex{
-    color: aliceblue;
-    padding: 0px 20px;
-    
-}
-
-@media (min-width:767px){
-    .container{
-        width:50%;
-        margin: 80px auto;
-        text-align: center;
-    }
-    nav{
-        background-color: rgb(31, 41, 55);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        gap:8px;
-    }
-    #colors{
-        width:800px;
-    }
-    .choose-color{
-        width:80px;
-    }
+    gap: 8px;
+  }
+  #colors {
+    width: 800px;
+  }
+  .choose-color {
+    width: 80px;
+  }
 }
