@@ -57,9 +57,12 @@ nav{
     border: 1px solid #c6ceda;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 .color-hex{
     color: aliceblue;
+    padding: 0px 20px;
     
 }
 
