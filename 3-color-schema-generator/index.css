@@ -14,12 +14,16 @@ nav{
     padding: 20px;
     gap:5px;
 }
-
+.choose-color{
+   padding: 0px;
+   height: 41px;
+}
 #colors{
     width:9rem;
     padding: 10px;
     background-color: #1F293A;
     color:aliceblue;
+    border: 1px solid aliceblue;
 }
 
 #get-color{
@@ -71,7 +75,7 @@ nav{
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        gap:5px;
+        gap:8px;
     }
     #colors{
         width:800px;
