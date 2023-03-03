@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #c6ceda;
 }
 
 
@@ -35,14 +36,17 @@ nav{
     align-items: center;
     text-align: center;
 
+
 }
 
 .list-color{
     background-color: #3D4B60;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 300px;
+    flex:1;
+
 }
-.footer{
+.hex-values{
     background-color: #3D4B60;
     padding: 10px;
     margin-top: 0px;
@@ -56,9 +60,10 @@ nav{
 }
 
 @media (min-width:767px){
-    #colors{
-        width:900px;
-        padding: 10px;
+    .container{
+        width:50%;
+        margin: 80px auto;
+        text-align: center;
     }
     nav{
         background-color: rgb(31, 41, 55);
@@ -67,5 +72,8 @@ nav{
         align-items: center;
         padding: 20px;
         gap:5px;
+    }
+    #colors{
+        width:800px;
     }
 }
