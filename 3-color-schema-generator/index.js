@@ -10,7 +10,7 @@ function firstRender(){
     let renderHexValues=""
 
 
-    fetch("https://www.thecolorapi.com/scheme?hex=0047AB&mode=monochrome")
+    fetch("https://www.thecolorapi.com/scheme?hex=000000&mode=monochrome")
     .then(res => res.json())
     .then(data => {
         for (let color of data.colors){
