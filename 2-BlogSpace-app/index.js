@@ -1,26 +1,25 @@
 /**
  Challenge:
 
- With the 5 blog post objects, display the `title` and `body`
-properties of the first 5 posts on the browser page.
+ Style it up!
  
- Hints: 
- * Create a `div` in the HTML file to store these items
- * Loop over the items creating a string of HTML elements you 
-   can then put into the div with `innerHTML`
+ * Add a short (~30px height) fixed navbar at the top with the text "BlogSpace". Remember to pad the top of your content so it doesn't get hidden behind the navbar.
+ * Add a font from Google Fonts.
+ * Any other styling you want to make it look nice!
+ 
  */
 
-   fetch("https://apis.scrimba.com/jsonplaceholder/posts")
-   .then(res => res.json())
-   .then(data => {
-       const postsArr = data.slice(0, 5)
-       let html = ""
-       for (let post of postsArr) {
-           html += `
-               <h3>${post.title}</h3>
-               <p>${post.body}</p>
-               <hr />
-           `
-       }
-       document.getElementById("blog-list").innerHTML = html
-   })
+ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+ .then(res => res.json())
+ .then(data => {
+     const postsArr = data.slice(0, 5)
+     let html = ""
+     for (let post of postsArr) {
+         html += `
+             <h3>${post.title}</h3>
+             <p>${post.body}</p>
+             <hr />
+         `
+     }
+     document.getElementById("blog-list").innerHTML = html
+ })
