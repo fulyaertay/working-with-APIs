@@ -17,8 +17,7 @@
 
   
   ### 1-BoredBot App
-  
-  
+
   ### Visualitaziton of the app;
   ![image](./1-BoredBot-app/BoredBot.gif)
   
@@ -38,7 +37,6 @@
   - Bored API
     
   ### 2-BlogSpace App
-  
   
   ### Visualitaziton of the app;
   ![image](./2-BlogSpace-app/BlogSpace.gif)
