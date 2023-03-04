@@ -34,8 +34,6 @@ function render() {
   const pickerVal = chooseColorFromPicker.value;
   const listVal = getColorFromSelectBox.value;
 
-  //console.log(listVal)
-
   fetch(
     `https://www.thecolorapi.com/scheme?hex=${pickerVal.slice(
       1
