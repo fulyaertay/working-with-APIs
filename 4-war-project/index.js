@@ -25,7 +25,10 @@ document.getElementById("draw-cards").addEventListener("click", () => {
 /**
  * Challenge:
  * 
- * Display the images of the 2 cards you drew in the browser.
- * Probably best to use `innerHTML` to insert a couple <img> elements
- * on the page.
+ * Start making this look lots nicer :)
+ * 
+ * 1. Add a card table background with the img/table.png image provided.
+ * 2. Move the draw button to the very bottom of the page, full width
+ * 3. Add some button styles. You can use the photo on the slides
+ * for one option.
  */
