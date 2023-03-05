@@ -81,4 +81,4 @@
   I created a war game. User can play this game against computer! The game uses an API on https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/. The app features;
     - User can select new deck
     - After deck selection, draw a new card
-    - At the end o f game, If users' score is high, they win the game otherwise computer win.
+    - At the end of game, If users' score is high, they win the game otherwise computer win.
