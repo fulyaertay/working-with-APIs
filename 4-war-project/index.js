@@ -6,16 +6,40 @@ function handleClick() {
 
 document.getElementById("new-deck").addEventListener("click", handleClick)
 
+// function callback() {
+//     console.log("I finally ran!")
+// }
+
+// setTimeout(callback, 2000)
+
 /**
  * Challenge: 
  * 
- * Part 1: write a `setTimeout` command. Have it wait for 2000 ms before logging "I finally ran!" to the console
+ * Part 1: Given the array of objects below, create a new array with the `.filter()` array method that contains only the objects where "hasPet" is true
+ * 
  * 
  * Part 2: Move the anonymous in-line function to its own, named function
  */
 
-function callback() {
-    console.log("I finally ran!")
+const people = [
+    { name: "Jack", hasPet: true, age: 12 },
+    { name: "Jill", hasPet: false, age: 18 },
+    { name: "Alice", hasPet: true, age: 22 },
+    { name: "Bob", hasPet: false, age: 32 },
+]
+
+function gimmeThePets(number) {
+    return person.hasPet
 }
 
-setTimeout(callback, 2000)
+const peopleWithPets = people.filter(gimmeThePets)
+console.log(peopleWithPets)
+
+// https://www.javascripttutorial.net/javascript-array-filter
+
+/**
+ * Extra challenge to practice array.filter:
+ * 
+ * Using .filter, create a new array of people who are 18 and older
+ * (should be Jill, Alice, and Bob)
+ */
