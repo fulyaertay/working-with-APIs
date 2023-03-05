@@ -1,16 +1,24 @@
-// function handleClick() {
-//     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
-//         .then(res => res.json())
-//         .then(data => console.log(data))
-// }
+let deckId=""
 
-// document.getElementById("new-deck").addEventListener("click", handleClick)
+function handleClick() {
+    fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            deckId = data.deck_id
+        })
+}
 
-const promise = fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
-console.log(promise.then(res => res.json()))
-
+document.getElementById("new-deck").addEventListener("click", handleClick)
 /**
- * Mini challenge: Figure out what `promise.then()` returns! 
- * Save the result to a variable and log it to the console.
+ * Challenge
+ * 
+ * Background:
+ * The Deck of Cards API expects us to provide the deck id 
+ * of the deck we're playing with so it can remember which
+ * cards we've already drawn, how many are remaining in the
+ * deck, etc.
+ * 
+ * Task: save the deck_id from the returned data to a local
+ * variable so we can use it later
  */
-    // .then(data => console.log(data))
