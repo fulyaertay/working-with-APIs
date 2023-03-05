@@ -49,10 +49,15 @@ img.card {
 
 div.top {
     display: flex;
+    align-items: flex-start;
     align-self: flex-start;
 }
 
 div.top > p {
     margin: 0;
     margin-left: 10px;
+}
+
+button:disabled {
+    cursor: not-allowed;
 }
