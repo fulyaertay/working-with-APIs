@@ -97,7 +97,7 @@
   
   ### Description
   
-  I created a movie watchlist app as solo project. The game uses an API on https://www.omdbapi.com/. The app features;
+  I created a movie watchlist app as a solo project. The game uses an API on https://www.omdbapi.com/. The app features;
     - User can search any movie according to its title
     - Added movie to on watclist
     - List their added movies
