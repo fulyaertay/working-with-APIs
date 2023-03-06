@@ -4,7 +4,12 @@ html, body {
     font-family: "Exo 2", sans-serif;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
+.my-watchlist{
+    color:aliceblue;
+}
 header{
     background-image:  linear-gradient(
         rgba(0, 0, 0, 0.842),
