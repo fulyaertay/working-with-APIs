@@ -88,11 +88,11 @@
     
   ### 5-Solo Project: Movie Watchlist
   
-  ### Visualization of the Movie Search;
+  ### • Visualization of the Movie Search;
   ![image](./5-movie-watchlist/movie-search.gif)
   
     
-  ### Visualization of the My Watchlist;
+  ### • Visualization of the My Watchlist;
   ![image](./5-movie-watchlist/my-movies.gif)
   
   ### Description
