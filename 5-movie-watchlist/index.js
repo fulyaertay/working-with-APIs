@@ -5,7 +5,7 @@ const searchInput = document.querySelector(".search-input");
 let container = document.querySelector(".movie-container");
 let addWatchListBtn= document.querySelector(".add-watchlist-icon")
 let addRemoveMovie = document.querySelector(".add-remove-movie")
-
+let isRemove=false
 
 document.addEventListener("click", function (e) {
     console.log(e.target)
@@ -86,13 +86,25 @@ function searchMovies() {
 
 function renderMyMovies(movieId){
    if( document.readyState === "complete"){
-    localStorage.setItem("movieId", JSON.stringify(movieId) )
+    if(isRemove==false){
+       
+
+   
+        localStorage.setItem("movieId", JSON.stringify(movieId) )
         document.getElementById(`add-remove-movie-${movieId}`).src="./images/remove-icon.png"
+        isRemove=true
+    } else{
+        document.getElementById(`add-remove-movie-${movieId}`).src="./images/my-watclish-icon.png"
+        localStorage.removeItem("movieId");
+        isRemove=false
+    }
     
+
+   
 
 
     }
-   
+  
         
         
        
