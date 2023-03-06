@@ -1,83 +1,76 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: "Exo 2", sans-serif;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.my-watchlist{
-    color:aliceblue;
+.my-watchlist {
+  color: aliceblue;
 }
-header{
-    background-image:  linear-gradient(
-        rgba(0, 0, 0, 0.842),
-        rgba(2, 2, 2, 0.603)
-      ),url("./images/header.jpg");
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    color:#ffffff;
-    position: relative;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.842), rgba(2, 2, 2, 0.603)),
+    url("./images/header.jpg");
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+  position: relative;
 }
-.search-box{
+.search-box {
+  height: 40px;
+  background-color: rgb(7, 38, 66);
+  border-radius: 10px;
+  position: absolute;
+  left: 250px;
+  top: 180px;
+  background-color: #ffffff;
+  border: 1px solid gray;
 
-    height:40px;
-    background-color: rgb(7, 38, 66);
-    border-radius: 10px;
-    position: absolute;
-    left:250px;
-    top:180px;
-    background-color: #ffffff;
-    border: 1px solid gray;
-
-    display: flex;
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
-.search-icon{
-    margin-left: 10px;
-    padding:5px;
+.search-icon {
+  margin-left: 10px;
+  padding: 5px;
 }
-.search-input{
-    border: none;
-    width:650px;
-    padding:5px;
+.search-input {
+  border: none;
+  width: 650px;
+  padding: 5px;
 }
-.search-input:hover{
-    border:1px solid gray;
+.search-input:hover {
+  border: 1px solid gray;
 }
-.submit-btn{
-    border:none;
-    margin-right: 0px;
-    cursor: pointer;
-    height:40px;
-    border-radius:0px 10px 10px 0px; 
-    width:200px;
-    background-color: #D1D5DB;
-    
+.submit-btn {
+  border: none;
+  margin-right: 0px;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 0px 10px 10px 0px;
+  width: 200px;
+  background-color: #d1d5db;
 }
-.submit-btn:hover{
-    background-color: #ebeef1;
-
+.submit-btn:hover {
+  background-color: #ebeef1;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 40px auto;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 40px auto;
 }
-.no-data{
-    padding:100px;
-    
+.no-data {
+  padding: 100px;
 }
