@@ -55,7 +55,7 @@ function searchMovies() {
                             <h5>${data.Runtime}</h5>
                             <h5 class="genre">${data.Genre}</h5>
                                 <div class="toggleMovie">
-                                    <img src="./images/my-watclish-icon.png" class="add-remove-movie" data-movie=${data.imdbID}>
+                                    <img src="./images/my-watclish-icon.png" class="add-remove-movie" id="add-remove-movie-${data.imdbID}" data-movie=${data.imdbID}>
                                 
                                 </div>
                             <h5 class="add-watchlist">Watchlist</h5>
@@ -85,9 +85,15 @@ function searchMovies() {
 }
 
 function renderMyMovies(movieId){
+   if( document.readyState === "complete"){
+    localStorage.setItem("movieId", JSON.stringify(movieId) )
+        document.getElementById(`add-remove-movie-${movieId}`).src="./images/remove-icon.png"
+    
+
+
+    }
    
-        localStorage.setItem("movieId", JSON.stringify(movieId) )
-        addRemoveMovie.src="./images/my-remove-icon.png"
+        
         
        
         
