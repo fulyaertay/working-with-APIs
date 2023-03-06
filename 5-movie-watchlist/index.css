@@ -36,9 +36,9 @@ header {
   top: 180px;
   background-color: #ffffff;
   border: 1px solid rgb(209, 206, 206);
-
   display: flex;
   align-items: center;
+  box-shadow: 2px 2px 6px gray;
 }
 .search-icon {
   margin-left: 10px;
@@ -48,6 +48,7 @@ header {
   border: none;
   width: 650px;
   padding: 5px;
+
 }
 .search-input:hover {
   border: 1px solid gray;
@@ -60,6 +61,7 @@ header {
   border-radius: 0px 10px 10px 0px;
   width: 200px;
   background-color: #d1d5db;
+
 }
 .submit-btn:hover {
   background-color: #ebeef1;
