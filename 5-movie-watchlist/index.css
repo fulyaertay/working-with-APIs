@@ -52,7 +52,7 @@ header {
 
 }
 .search-input:hover {
-  border: 1px solid gray;
+  outline: none;
 }
 .submit-btn {
   border: none;
@@ -61,12 +61,13 @@ header {
   height: 40px;
   border-radius: 0px 10px 10px 0px;
   width: 200px;
-  background-color: #d1d5db;
+  background-color: #e7ebf0;
   font-weight: 800;
 
 }
 .submit-btn:hover {
-  background-color: #ebeef1;
+  background-color: #1e2022;
+  color:#ffffff;
 }
 .container {
   display: flex;
