@@ -5,7 +5,7 @@ const searchInput = document.querySelector(".search-input");
 let container = document.querySelector(".movie-container");
 let addWatchListBtn= document.querySelector(".add-watchlist-icon")
 let addRemoveMovie = document.querySelector(".add-remove-movie")
-let toggleMovie=document.querySelector(".toggleMovie")
+
 
 document.addEventListener("click", function (e) {
     console.log(e.target)
@@ -87,11 +87,9 @@ function searchMovies() {
 function renderMyMovies(movieId){
    
         localStorage.setItem("movieId", JSON.stringify(movieId) )
-        console.log(toggleMovie)
-        toggleMovie.innerHTML=`
-        <img src="./images/my-remove-icon.png" class="add-remove-movie" data-movie=${movieId}>
+        addRemoveMovie.src="./images/my-remove-icon.png"
         
-        `
+       
         
        
 
