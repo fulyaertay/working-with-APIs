@@ -3,8 +3,19 @@
 const submitBtn = document.querySelector(".submit-btn");
 const searchInput = document.querySelector(".search-input");
 let container = document.querySelector(".movie-container");
+let addWatchListBtn= document.querySelector(".add-watchlist-icon")
+let addRemoveMovie = document.querySelector(".add-remove-movie")
+let toggleMovie=document.querySelector(".toggleMovie")
 
-function renderMovies() {
+document.addEventListener("click", function (e) {
+    console.log(e.target)
+    if (e.target.dataset.movie) {
+  
+        renderMyMovies(e.target.dataset.movie);
+    }
+})
+
+function searchMovies() {
   if (searchInput.value == "") {
     container.innerHTML = `
           <img src="./images/no-data-initial.png" class="no-data" />
@@ -19,7 +30,7 @@ function renderMovies() {
         container.innerHTML =""
         if (data.Response==="False") {
           container.innerHTML = `
-            <h2 class="no-movie">Movie not found!</h2>
+            <h2 class="no-movie">Unable to find what you’re looking for. Please try another search.</h2>
          `;
         } else {
          
@@ -43,7 +54,10 @@ function renderMovies() {
                         <div class="movie-info">
                             <h5>${data.Runtime}</h5>
                             <h5 class="genre">${data.Genre}</h5>
-                                <img src="./images/my-watclish-icon.png" class="add-watchlist-icon">
+                                <div class="toggleMovie">
+                                    <img src="./images/my-watclish-icon.png" class="add-remove-movie" data-movie=${data.imdbID}>
+                                
+                                </div>
                             <h5 class="add-watchlist">Watchlist</h5>
                         
                         </div>
@@ -59,12 +73,48 @@ function renderMovies() {
 
           
             `;
+
+           
           
         }
+        
       });
 
     searchInput.value = "";
   });
 }
 
-renderMovies();
+function renderMyMovies(movieId){
+   
+        localStorage.setItem("movieId", JSON.stringify(movieId) )
+        console.log(toggleMovie)
+        toggleMovie.innerHTML=`
+        <img src="./images/my-remove-icon.png" class="add-remove-movie" data-movie=${movieId}>
+        
+        `
+        
+       
+
+    
+}
+
+
+function searchMyMovies() {
+    if (searchInput.value == "") {
+      container.innerHTML = `
+            <img src="./images/no-data-initial.png" class="no-data" />
+  
+            `;
+    }
+}
+
+
+
+
+
+
+
+
+
+//Search on index.html
+searchMovies();
