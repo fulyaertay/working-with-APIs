@@ -7,6 +7,8 @@
   - [1-BoredBot App](#bored-bot)
   - [2-BlogSpace App](#blog-space)
   - [3-Color Schema Genarator](#color-generator)
+  - [4-War Project](#war-project)
+  - [5-Movie Watchlist](#movie-watchlist)
     
     
   ## Overview
@@ -82,3 +84,27 @@
     - User can select new deck
     - After deck selection, draw a new card
     - At the end of game, If users' score is high, they win the game otherwise computer win.
+    
+    
+  ### 5-Solo Project: Movie Watchlist
+  
+  ### Visualization of the Movie Search;
+  ![image](./5-movie-watchlist/movie-search.gif)
+  
+    
+  ### Visualization of the My Watchlist;
+  ![image](./5-movie-watchlist/my-movies.gif)
+  
+  ### Description
+  
+  I created a movie watchlist app as solo project. The game uses an API on https://www.omdbapi.com/. The app features;
+    - User can search any movie according to its title
+    - Added movie to on watclist
+    - List their added movies
+    - Remove movies from watchlist
+    
+  ### What I Learned?
+  - Callbacks
+  - Promises(pending, resolved, rejected)
+  - .then() and chaining methods
+  - Async/await
