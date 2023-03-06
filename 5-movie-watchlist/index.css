@@ -79,3 +79,47 @@ header {
 .no-data, .no-movie {
   padding: 100px;
 }
+.movie-container{
+    border:1px solid red;
+    width:90%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.movie-card{
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+.movie-content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.movie-image{
+    padding:10px;
+    width:120px;
+    height: 160px;
+}
+
+.movie-info{
+    display: flex;
+    align-items: center;
+}
+.star-icon{
+    width:20px;
+    height: 20px;
+}
+.star-icon,.genre{
+
+    margin-left: 20px;
+}
+
+.add-watchlist{
+    margin-left: 5px;
+
+}
+.movie-text{
+    color:#6B7280;
+    font-weight: 500;
+}
