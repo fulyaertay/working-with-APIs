@@ -16,6 +16,7 @@ function renderMovies() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        container.innerHTML =""
         if (data.Response==="False") {
           container.innerHTML = `
             <h2 class="no-movie">Movie not found!</h2>
@@ -24,7 +25,7 @@ function renderMovies() {
           for (movie of data.Search) {
             container.innerHTML += `
 
-          
+
                 <div class="movie-card">
                     <div class="poster-image">
                         <img src="${movie.Poster}" class="movie-image">
