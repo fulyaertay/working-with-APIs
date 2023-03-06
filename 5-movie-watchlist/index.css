@@ -30,7 +30,7 @@ header{
     position: relative;
 }
 .search-box{
-    width:800px;
+
     height:40px;
     background-color: rgb(7, 38, 66);
     border-radius: 10px;
@@ -39,11 +39,34 @@ header{
     top:180px;
     background-color: #ffffff;
     border: 1px solid gray;
-    padding:5px;
+
     display: flex;
     align-items: center;
 
 }
 .search-icon{
     margin-left: 10px;
+    padding:5px;
+}
+.search-input{
+    border: none;
+    width:650px;
+    padding:5px;
+}
+.search-input:hover{
+    border:1px solid gray;
+}
+.submit-btn{
+    border:none;
+    margin-right: 0px;
+    cursor: pointer;
+    height:40px;
+    border-radius:0px 10px 10px 0px; 
+    width:200px;
+    background-color: #D1D5DB;
+    
+}
+.submit-btn:hover{
+    background-color: #ebeef1;
+
 }
