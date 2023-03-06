@@ -43,10 +43,10 @@ function listMyMovies() {
                             <h5>${data.Runtime}</h5>
                             <h5 class="genre">${data.Genre}</h5>
                                 <div class="toggleMovie">
-                                    <img src="./images/my-watclish-icon.png" class="add-remove-movie" id="add-remove-movie-${data.imdbID}" data-movie=${data.imdbID}>
+                                    <img src="./images/remove-icon.png" class="add-remove-movie" id="add-remove-movie-${data.imdbID}" data-movie=${data.imdbID}>
                                 
                                 </div>
-                            <h5 class="add-watchlist">Watchlist</h5>
+                            <h5 class="add-watchlist">Remove</h5>
                         
                         </div>
 
@@ -80,19 +80,14 @@ function listMyMovies() {
 
 function renderMyMovies(movieId) {
   if (document.readyState === "complete") {
-    if (isRemove == false) {
-      localStorage.setItem("movieId", JSON.stringify(movieId));
-      document.getElementById(`add-remove-movie-${movieId}`).src =
-        "./images/remove-icon.png";
-      isRemove = true;
-    } else {
-      document.getElementById(`add-remove-movie-${movieId}`).src =
-        "./images/my-watclish-icon.png";
-      localStorage.removeItem("movieId");
-      isRemove = false;
+    if (document.getElementById(`add-remove-movie-${movieId}`).parentElement.contains("movie-card")){
+        document.getElementById(`add-remove-movie-${movieId}`).parentElement.style="display:none"
     }
-  }
+        
+     
+   
 }
+    }
 
 //List my movies on watchlist.html
 listMyMovies();
