@@ -80,12 +80,21 @@ header {
   padding: 100px;
   margin: 0 auto;
 }
-.no-movie{
+.no-movie,.no-my-movie{
     color:#DFDDDD;
 }
 .no-data{
     width:200px;
     margin: 0 auto;
+}
+.no-my-movie{
+    margin: 0 auto;
+}
+.no-data-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
 }
 .movie-container,.movie-container-watchlist{
     width:90%;

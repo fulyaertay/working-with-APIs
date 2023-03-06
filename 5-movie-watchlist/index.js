@@ -87,13 +87,13 @@ function searchMovies() {
 
 function renderMyMovies(movieId){
    if( document.readyState === "complete"){
-    if(isRemove==false){
-       
 
-   
+    if(isRemove==false){
+
         localStorage.setItem("movieId", JSON.stringify(movieId) )
         document.getElementById(`add-remove-movie-${movieId}`).src="./images/remove-icon.png"
         isRemove=true
+
     } else{
         document.getElementById(`add-remove-movie-${movieId}`).src="./images/my-watclish-icon.png"
         localStorage.removeItem("movieId");
@@ -116,16 +116,6 @@ function renderMyMovies(movieId){
 }
 
 
-function searchMyMovies() {
-    if (searchInput.value == "") {
-      container.innerHTML = `
-            <img src="./images/no-data-initial.png" class="no-data" />
-  
-            `;
-    }
-}
-
-
 
 
 
@@ -135,3 +125,5 @@ function searchMyMovies() {
 
 //Search on index.html
 searchMovies();
+
+
