@@ -69,7 +69,7 @@ header {
   background-color: #1e2022;
   color:#ffffff;
 }
-.container, .container-watchlist {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ header {
     width:200px;
     margin: 0 auto;
 }
-.movie-container,.movie-container-watchlist{
+.movie-container{
     width:90%;
     margin-top: 40px;
     display: flex;
