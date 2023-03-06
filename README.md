@@ -68,3 +68,17 @@
     - User can select a seed color with a color picker or
     - Select a color on dropdown list
     - Schema colors and hex values are displayed on the page
+    
+    
+    
+  ### 4-Solo Project: War Project
+  
+  ### Visualization of the app;
+  ![image](./4-war-project/war-game.gif)
+  
+  ### Description
+  
+  I created a war game. User can play this game against computer! The game uses an API on https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/. The app features;
+    - User can select new deck
+    - After deck selection, draw a new card
+    - At the end of game, If users' score is high, they win the game otherwise computer win.
