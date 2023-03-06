@@ -35,7 +35,7 @@ header {
   left: 250px;
   top: 180px;
   background-color: #ffffff;
-  border: 1px solid gray;
+  border: 1px solid rgb(209, 206, 206);
 
   display: flex;
   align-items: center;
