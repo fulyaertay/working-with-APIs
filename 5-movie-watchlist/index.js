@@ -6,6 +6,7 @@ let container = document.querySelector(".movie-container");
 let addWatchListBtn= document.querySelector(".add-watchlist-icon")
 let addRemoveMovie = document.querySelector(".add-remove-movie")
 let isRemove=false
+const moviesFromLocalStorage = JSON.parse( localStorage.getItem("movieId") )
 
 document.addEventListener("click", function (e) {
     console.log(e.target)
