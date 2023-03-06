@@ -78,9 +78,13 @@ header {
 }
 .no-data, .no-movie {
   padding: 100px;
+  margin: 0px;
+}
+.no-data{
+    width:200px;
+    margin: 0 auto;
 }
 .movie-container{
-    border:1px solid red;
     width:90%;
     margin-top: 40px;
     display: flex;
