@@ -39,6 +39,11 @@ header{
     top:180px;
     background-color: #ffffff;
     border: 1px solid gray;
+    padding:5px;
+    display: flex;
+    align-items: center;
 
-    
+}
+.search-icon{
+    margin-left: 10px;
 }
