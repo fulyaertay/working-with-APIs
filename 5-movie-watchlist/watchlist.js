@@ -2,8 +2,9 @@ let containerWatchlist = document.querySelector(".movie-container-watchlist");
 let addWatchListBtn = document.querySelector(".add-watchlist-icon");
 let addRemoveMovie = document.querySelector(".add-remove-movie");
 let isRemove = false;
-const moviesFromLocalStorage = JSON.parse(localStorage.getItem("movieId"));
+let moviesFromLocalStorage =""
 let myMovies = [];
+let isAdded=false
 
 document.addEventListener("click", function (e) {
   console.log(e.target);
@@ -13,6 +14,7 @@ document.addEventListener("click", function (e) {
 });
 
 function listMyMovies() {
+    moviesFromLocalStorage = JSON.parse(localStorage.getItem("movieId"));
   if (moviesFromLocalStorage) {
     myMovies = moviesFromLocalStorage;
     fetch(
@@ -25,7 +27,7 @@ function listMyMovies() {
 
         containerWatchlist.innerHTML += `
 
-                <div class="movie-card">
+                <div class="movie-card" id="movie-card-${data.imdbID}">
                     <div class="poster-image">
                         <img src="${data.Poster}" class="movie-image">
                     </div>
@@ -79,15 +81,15 @@ function listMyMovies() {
 }
 
 function renderMyMovies(movieId) {
-  if (document.readyState === "complete") {
-    if (document.getElementById(`add-remove-movie-${movieId}`).parentElement.contains("movie-card")){
-        document.getElementById(`add-remove-movie-${movieId}`).parentElement.style="display:none"
-    }
-        
-     
+
+    document.getElementById(`movie-card-${movieId}`).style.display="none"
+    localStorage.removeItem("movieId");
+    listMyMovies()
    
+  
+  
 }
-    }
+    
 
 //List my movies on watchlist.html
 listMyMovies();
