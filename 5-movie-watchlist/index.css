@@ -117,6 +117,7 @@ header {
 .star-icon,.genre{
 
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .add-watchlist{
@@ -126,4 +127,8 @@ header {
 .movie-text{
     color:#6B7280;
     font-weight: 500;
+}
+
+.add-watchlist-icon{
+    cursor: pointer;
 }
