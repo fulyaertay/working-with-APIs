@@ -5,23 +5,23 @@ const searchInput = document.querySelector(".search-input");
 let container = document.querySelector(".movie-container");
 
 function renderMovies() {
-    if (searchInput.value == "") {
-      container.innerHTML = `
+  if (searchInput.value == "") {
+    container.innerHTML = `
           <img src="./images/no-data-initial.png" class="no-data" />
 
           `;
-    }
+  }
   submitBtn.addEventListener("click", () => {
     fetch(`https://www.omdbapi.com/?s=${searchInput.value}&apikey=60c3cf12`)
       .then((res) => res.json())
       .then((data) => {
-        if (data.Title == undefined) {
-           container.innerHTML = `
+        console.log(data);
+        if (data.Response==="False") {
+          container.innerHTML = `
             <h2 class="no-movie">Movie not found!</h2>
          `;
-        }
-        console.log(data)
-        for (movie of data.Search){
+        } else {
+          for (movie of data.Search) {
             container.innerHTML += `
 
           
@@ -58,13 +58,12 @@ function renderMovies() {
 
           
             `;
-      
+          }
         }
-    })
-  
+      });
+
     searchInput.value = "";
   });
 }
-
 
 renderMovies();

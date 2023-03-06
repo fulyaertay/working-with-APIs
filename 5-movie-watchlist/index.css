@@ -78,7 +78,7 @@ header {
 }
 .no-data, .no-movie {
   padding: 100px;
-  margin: 0px;
+  margin: 0 auto;
 }
 .no-data{
     width:200px;
