@@ -114,7 +114,7 @@
   ### 6-Capstone Project: Personal Dashboard
   
   ### Visualization of the App;
-  ![image](./6-personal-dashboard/personal-dashborad.gif)
+  ![image](./6-personal-dashboard/personal-dashboard.gif)
   
   ### Description
   
@@ -130,10 +130,12 @@
   - Current weather app according to their cities
   - Current time
   - Random background image that received from Unsplash
+  - Get a random todo quote
     
   ### What I Learned?
   - Promise rejections
   - Unsplash API
   - Crypto API
   - Open Weather API
+  - https://dummyjson.com/docs/todos API to get random todo
 
