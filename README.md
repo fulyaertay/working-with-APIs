@@ -126,10 +126,10 @@
   - Open a new tab on chrome and see this app!
   
  When user clicks a new tab on chrome, they will see;
-  - Dogecoin prices
+  - Current Dogecoin prices
   - Current weather app according to their cities
   - Current time
-  - Random background
+  - Random background image that received from Unsplash
     
   ### What I Learned?
   - Promise rejections
