@@ -118,14 +118,14 @@
   
   ### Description
   
- -I created a capstone project called as personal dashboard. It runs as chrome extension. The app is integrated on chrome following these steps;
+ I created a capstone project called as personal dashboard. It runs as chrome extension. The app is integrated on chrome following these steps;
   - Download this folder to your local machine
   - Open chrome browser and type "chrome://extensions"
   - Select developer mode
   - Click "Load Unpacked" and choose folder that you download
   - Open a new tab on chrome and see this app!
   
- -When user clicks a new tab on chrome, they will see;
+ When user clicks a new tab on chrome, they will see;
   - Dogecoin prices
   - Current weather app according to their cities
   - Current time
