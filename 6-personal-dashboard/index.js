@@ -31,12 +31,12 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
     })
     .catch(err => console.error(err))
 
-// function getCurrentTime() {
-//     const date = new Date()
-//     document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
-// }
+function getCurrentTime() {
+    const date = new Date()
+    document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
+}
 
-// setInterval(getCurrentTime, 1000)
+setInterval(getCurrentTime, 1000)
 
 navigator.geolocation.getCurrentPosition(position => {
     fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial`)
@@ -47,39 +47,12 @@ navigator.geolocation.getCurrentPosition(position => {
             return res.json()
         })
         .then(data => {
-            console.log(data)
             const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
             document.getElementById("weather").innerHTML = `
                 <img src=${iconUrl} />
-                <p>${Math.round(data.main.temp)}º</p>
-                <p>${data.name}</p>
+                <p class="weather-temp">${Math.round(data.main.temp)}º</p>
+                <p class="weather-city">${data.name}</p>
             `
         })
         .catch(err => console.error(err))
 });
-
-/**
- * Challenge: Display the temperature (rounded to the nearest degree)
- * and the city. Don't worry about the layout for now.
- */
-
-// base: "stations"
-// clouds: {all: 1}
-// cod: 200
-// coord: {lon: -111.9162, lat: 40.5269}
-// dt: 1623180787
-// id: 5780557
-// main:
-    // feels_like: 80.56
-    // humidity: 17
-    // pressure: 1009
-    // temp: 83.17
-    // temp_max: 88
-    // temp_min: 78.62
-// __proto__: Object
-// name: "Riverton"
-// sys: {type: 2, id: 2003861, country: "US", sunrise: 1623153431, sunset: 1623207400}
-// timezone: -21600
-// visibility: 10000
-// weather: [{…}]
-// wind: {speed: 11.01, deg: 167, gust: 21.99}
