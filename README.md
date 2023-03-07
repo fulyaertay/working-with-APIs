@@ -114,7 +114,7 @@
   ### 6-Capstone Project: Personal Dashboard
   
   ### Visualization of the App;
-  ![image](./6-personal-dashboard/personal-dashboard.gif)
+  ![image](./6-personal-dashboard/personal-dashborad.gif)
   
   ### Description
   
