@@ -31,6 +31,15 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
     })
     .catch(err => console.error(err))
 
+fetch('https://dummyjson.com/todos/random')
+    .then(res => res.json())
+    .then( data => {
+        document.getElementById("todo").innerHTML=`${data.todo}`
+    }
+    );
+
+
+
 function getCurrentTime() {
     const date = new Date()
     document.getElementById("time").textContent = date.toLocaleTimeString("en-us", {timeStyle: "short"})
