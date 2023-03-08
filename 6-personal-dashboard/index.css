@@ -30,6 +30,7 @@ div.top {
 h1.time {
   text-align: center;
   font-size: 5rem;
+  text-shadow: 1px 1px 1px ;
 }
 h1 {
   display: inline-block;
