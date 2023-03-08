@@ -55,17 +55,26 @@ function getCurrentTime() {
 }
 
 navigator.geolocation.getCurrentPosition(async (position) => {
-  const res = await fetch(
-    `https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric `
-  );
-  const data = await res.json();
-  const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  document.getElementById("weather").innerHTML = `
-        <img src=${iconUrl} />
-        <p class="weather-temp">${Math.round(data.main.temp)}º</p>
-        <p class="weather-city">${data.name}</p>
-    `;
+    try {
+        const res = await fetch(
+            `https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric `
+          );
+          const data = await res.json();
+          const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+          document.getElementById("weather").innerHTML = `
+                <img src=${iconUrl} />
+                <p class="weather-temp">${Math.round(data.main.temp)}º</p>
+                <p class="weather-city">${data.name}</p>
+            `;
+       
+        
+        
+    } catch (err) {
+        console.error(err);
+        
+    }
 });
+
 
 //fetching from APIs
 callImage();
