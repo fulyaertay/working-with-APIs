@@ -36,11 +36,16 @@ const callDogeCoin = async () => {
   }
 };
 
-fetch("https://dummyjson.com/todos/random")
-  .then((res) => res.json())
-  .then((data) => {
+const getTodo = async () => {
+  try {
+    const res = await fetch("https://dummyjson.com/todos/random");
+    const data = await res.json();
+
     document.getElementById("todo").innerHTML = `${data.todo}`;
-  });
+  } catch (err) {
+    console.error(err);
+  }
+};
 
 function getCurrentTime() {
   const date = new Date();
@@ -67,3 +72,4 @@ navigator.geolocation.getCurrentPosition(async (position) => {
 
 callImage();
 callDogeCoin();
+getTodo();
