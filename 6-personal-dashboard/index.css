@@ -35,8 +35,11 @@ h1 {
   display: inline-block;
   margin-bottom: 0px;
 }
-.todo {
+.todo, .status-day {
   text-align: center;
+}
+.status-day{
+    font-size: 2rem;
 }
 .time-todo {
   display: flex;
