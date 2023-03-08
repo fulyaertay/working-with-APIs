@@ -31,7 +31,7 @@ const callDogeCoin = async () => {
                     <p>👇: $${data.market_data.low_24h.usd}</p>
                 `;
   } catch (err) {
-    console.error(err);
+    document.getElementById("crypto").innerHTML ="Something went wrong!"
   }
 };
 
