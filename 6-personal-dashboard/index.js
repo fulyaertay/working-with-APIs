@@ -36,14 +36,14 @@ const callDogeCoin = async () => {
 };
 
 const getTodo = async () => {
-  try {
+  
     const res = await fetch("https://dummyjson.com/todos/random");
     const data = await res.json();
 
     document.getElementById("todo").innerHTML = `${data.todo}`;
-  } catch (err) {
-    document.getElementById("todo").innerHTML ="Something went wrong!"
-  }
+    if(data.todo =="undefined")
+        document.getElementById("todo").innerHTML ="Something went wrong!"
+ 
 };
 
 function getCurrentTime() {
