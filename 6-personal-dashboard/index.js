@@ -72,7 +72,7 @@ navigator.geolocation.getCurrentPosition(async (position) => {
                 <p class="weather-city">${data.name}</p>
             `;
   } catch (err) {
-    console.error(err);
+    document.getElementById("weather").innerHTML="Something went wrong!"
   }
 });
 
