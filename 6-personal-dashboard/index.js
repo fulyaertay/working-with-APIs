@@ -52,6 +52,11 @@ function getCurrentTime() {
     "en-us",
     { timeStyle: "short" }
   );
+  if(date.timeStyle=="AM"){
+    document.getElementById("status-day").textContent="Have a great day!"
+  }else{
+    document.getElementById("status-day").textContent="Good Evening!"
+  }
 }
 
 navigator.geolocation.getCurrentPosition(async (position) => {
