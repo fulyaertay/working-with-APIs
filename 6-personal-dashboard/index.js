@@ -42,7 +42,7 @@ const getTodo = async () => {
 
     document.getElementById("todo").innerHTML = `${data.todo}`;
   } catch (err) {
-    console.error(err);
+    document.getElementById("todo").innerHTML ="Something went wrong!"
   }
 };
 
