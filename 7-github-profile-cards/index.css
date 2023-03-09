@@ -26,12 +26,13 @@ body {
   height: 200px;
   margin: 100px auto;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   background-color: #18171659;
   color: #ffffff;
   font-weight: 500;
   box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.904),
     0 6px 20px 0 rgba(0, 0, 0, 0.973);
+    padding: 30px;
 }
 .header-text {
   margin-top: 40px;
@@ -56,7 +57,7 @@ body {
   outline: none;
   border: none;
 }
-.search-icon {
+.search-btn {
   border-radius: 0 20px 20px 0;
   cursor: pointer;
   width: 80px;
@@ -67,4 +68,11 @@ body {
 }
 .search-icon:hover{
     background-color: #e2e2e1da;
+}
+.github-avatar{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+
+
 }
