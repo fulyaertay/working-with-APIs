@@ -153,3 +153,4 @@
    - User can get a random Github profile card
    - User can search specific profile on the search box
    - User can see profile details on the card such as; name, location, total followers, followings or repos
+ ### Note: API rate limit exceeded for the server. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)
