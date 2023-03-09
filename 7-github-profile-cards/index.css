@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "GFS Didot", serif;
 }
+a{
+    color: #ffffff;
+}
 body {
   background: #355c7d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -81,4 +84,9 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 30px;
+    gap:15px;
+}
+.statistics{
+    display: flex;
+    gap: 30px;
 }
