@@ -21,45 +21,42 @@ body {
     #355c7d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.profile-card{
-    width: 600px;
-    height: 200px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    background-color: #18171659;
-    color:#ffffff;
-    font-weight: 500;
-    box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.904), 0 6px 20px 0 rgba(0, 0, 0, 0.973);
+.profile-card {
+  width: 600px;
+  height: 200px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #18171659;
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.904),
+    0 6px 20px 0 rgba(0, 0, 0, 0.973);
 }
-.header-text{
-    margin-top: 40px;
-    text-align: center;
-    color: antiquewhite;
-    font-weight: 10;
-
-
+.header-text {
+  margin-top: 40px;
+  text-align: center;
+  color: antiquewhite;
+  font-weight: 10;
 }
-.search-box{
-    width:600px;
-    margin: 30px auto;
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 20px;
-
+.search-box {
+  width: 600px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
 }
-.search-input{
-    border-radius: 20px;
-    width: 600px;
-    height: 30px;
-    padding: 15px;
-    outline: none;
-    border: none;
-    
+.search-input {
+  border-radius: 20px;
+  width: 600px;
+  height: 30px;
+  padding: 15px;
+  outline: none;
+  border: none;
 }
-.search-icon{
-    border-radius: 0 20px 20px 0;
+.search-icon {
+  border-radius: 0 20px 20px 0;
   cursor: pointer;
   width: 80px;
   height: 30px;
