@@ -37,7 +37,8 @@ body {
   margin-top: 40px;
   text-align: center;
   color: antiquewhite;
-  font-weight: 10;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .search-box {
   width: 600px;
