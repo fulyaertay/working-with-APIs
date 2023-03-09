@@ -7,7 +7,12 @@ async function getProfile(){
     const data = await res.json()
         profileCard.innerHTML+=`
             <img src="${data.avatar_url}" class="github-avatar"/>
-        
+            <div class="user-content">
+            <h4>${data.name}</h4>
+            
+            </div>
+           
+            
         `
 }
 

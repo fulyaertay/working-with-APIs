@@ -76,3 +76,9 @@ body {
 
 
 }
+.user-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
