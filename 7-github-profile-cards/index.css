@@ -62,4 +62,8 @@ body {
   height: 30px;
   border: none;
   outline: none;
+  background-color: #18171659;
+}
+.search-icon:hover{
+    background-color: #e2e2e1da;
 }
