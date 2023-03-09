@@ -150,6 +150,6 @@
   ### Description
   
   I created a solo project called as GitHub Profile Card. The app uses an API on https://api.github.com/users. The app features;
-    - User can get a random Github profile card
-    - User can search specific profile on the search box
-    - User can see profile details on the card such as; name, location, total followers, followings or repos
+   - User can get a random Github profile card
+   - User can search specific profile on the search box
+   - User can see profile details on the card such as; name, location, total followers, followings or repos
