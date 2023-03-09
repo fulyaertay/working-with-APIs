@@ -6,8 +6,8 @@
   box-sizing: border-box;
   font-family: "GFS Didot", serif;
 }
-a{
-    color: #ffffff;
+a {
+  color: #ffffff;
 }
 body {
   background: #355c7d; /* fallback for old browsers */
@@ -35,7 +35,7 @@ body {
   font-weight: 500;
   box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.904),
     0 6px 20px 0 rgba(0, 0, 0, 0.973);
-    padding: 30px;
+  padding: 30px;
 }
 .header-text {
   margin-top: 40px;
@@ -69,24 +69,22 @@ body {
   outline: none;
   background-color: #18171659;
 }
-.search-icon:hover{
-    background-color: #e2e2e1da;
+.search-icon:hover {
+  background-color: #e2e2e1da;
 }
-.github-avatar{
-    width:100px;
-    height: 100px;
-    border-radius: 50%;
-
-
+.github-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
-.user-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    gap:15px;
+.user-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  gap: 15px;
 }
-.statistics{
-    display: flex;
-    gap: 30px;
+.statistics {
+  display: flex;
+  gap: 30px;
 }
